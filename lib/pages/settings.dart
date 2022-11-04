@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class Settings extends StatefulWidget {
   @override
@@ -74,8 +74,8 @@ class _SettingsState extends State<Settings> {
                       TextButton(
                           onPressed: () async {
                             const url = 'https://flutterblog.crumet.com';
-                            if (await canLaunch(url)) {
-                              await launch(url);
+                            if (await canLaunchUrlString(url)) {
+                              await launchUrlString(url);
                             } else {
                               throw 'Could not launch $url';
                             }
@@ -87,8 +87,8 @@ class _SettingsState extends State<Settings> {
                       TextButton(
                           onPressed: () async {
                             const url = 'mailto:info@crumet.com';
-                            if (await canLaunch(url)) {
-                              await launch(url);
+                            if (await canLaunchUrlString(url)) {
+                              await launchUrlString(url);
                             } else {
                               throw 'Could not launch $url';
                             }

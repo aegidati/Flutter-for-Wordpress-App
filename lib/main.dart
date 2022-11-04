@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
                 fontSize: 17,
                 color: Colors.black,
                 height: 1.2,
-                fontWeight: FontWeight.w500,
-                fontFamily: "Soleil",
+                // fontWeight: FontWeight.w500,
+                // fontFamily: "Soleil",
               ),
               caption: TextStyle(color: Colors.black45, fontSize: 10),
               bodyText1: TextStyle(
